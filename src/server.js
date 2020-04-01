@@ -80,7 +80,7 @@ module.exports = async (serverOptions, options) => {
 
   server.auth.default('jwt')
 
-  // server.route(require('./routes.js'))
+  server.route(require('./routes'))
 
   return server
 }

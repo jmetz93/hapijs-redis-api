@@ -8,7 +8,7 @@ module.exports = {
     auth: 'jwt',
     validate: {
       payload: {
-        index: Joi.number().min(0).require().notes('Index to delete')
+        index: Joi.number().min(0).required().notes('Index to delete')
       }
     },
     description: 'Delete item',
